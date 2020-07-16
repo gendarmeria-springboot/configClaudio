@@ -1,0 +1,19 @@
+server:
+  port: 10300
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:oracle:thin:@gend-clust-scan.gendarmeria.gob.cl:1521/test.gendarmeria.gob.cl
+    username: sia3
+    password: prueba
+---
+api-auth:
+  url: http://52.67.206.193:5000
